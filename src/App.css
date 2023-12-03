@@ -6,6 +6,12 @@
   height: 40vmin;
   pointer-events: none;
 }
+ul {
+  list-style: none;
+}
+input[type="text"] {
+  margin-right: 5px;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

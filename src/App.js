@@ -1,40 +1,21 @@
-import { useState } from 'react';
 import './App.css';
+import LoginPage from './components/pages/login/LoginPage';
 
 
 function App() {
 
-  const [ fruits, setFruits] = useState([
-    { id: 1, nom: "Mangue"},
-    { id: 2, nom: "Banane"},
-    { id: 3, nom: "Orange"}
-  ]);
+  
   //state
-  const [ nouveauFruit, setNouveauFruit] = useState("");
 
   //comportements
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(e);
-  }
-  const handleChange = (e) => {
-    //console.log(e.target.value);
-    setNouveauFruit(e.target.value);
-  }
+  
 
   //affichage (render)
   
 
   return (
     <div className='App'>
-      <h1>Liste de Fruits</h1>
-      <ul>{ fruits.map((fruit) => {
-        return <li key={fruit.id}>{fruit.nom}</li>
-      } ) }</ul>
-      <form action="submit" onSubmit={handleSubmit}>
-        <input value={nouveauFruit} type="text" placeholder='Ajouter un fruit...' onChange={handleChange} />
-        <button>Ajouter</button>
-      </form>
+      <LoginPage/>
     </div>
   );
 }

@@ -1,5 +1,5 @@
+
 import './App.css';
-import LoginPage from './components/pages/login/LoginPage';
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className='App'>
-      <LoginPage/>
+    <h1>salut</h1>
     </div>
   );
 }
